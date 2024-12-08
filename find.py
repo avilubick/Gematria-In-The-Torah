@@ -14,7 +14,7 @@ while True:
     x = translator.translate(x, dest="he", src="en")
     x = x.text
     print(x)
-    x = x.replace(" ", "")
+    x = x.replace(" ", "").replace(".","").replace(".","")
     x = remove_nekudot(x)
     gimin = 0
     for i in x:
